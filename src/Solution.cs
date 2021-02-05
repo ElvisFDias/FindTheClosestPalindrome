@@ -61,7 +61,7 @@ namespace FindTheClosestPalindrome
                 if (operationResult.IsPalindromic)
                     return number;
 
-                long diff = 0;
+                long diff;
 
                 if (operationResult.NumberDiffA > operationResult.NumberDiffB)
                     diff = operationResult.NumberDiffA - operationResult.NumberDiffB;
@@ -83,7 +83,6 @@ namespace FindTheClosestPalindrome
         {
             public bool IsPalindromic { get; set; }
             public int DiferentIndex { get; set; }
-            
             public long NumberDiffA { get; set; }
             public long NumberDiffB  { get; set; }
         }

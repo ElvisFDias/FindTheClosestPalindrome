@@ -43,5 +43,17 @@ namespace FindTheClosestPalindromeTest
 
             Assert.Equal("77", result);
         }
+
+        [Fact]
+        public void N004_Should_Return_Closest_Palindrome()
+        {
+            var number = "123";
+
+            var solution = new Solution();
+
+            var result = solution.NearestPalindromic(number);
+
+            Assert.Equal("121", result);
+        }
     }
 }
